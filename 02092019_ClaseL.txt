@@ -1,0 +1,84 @@
+    1  cd Documentos/Distribuidos/sd2019b-workshop0
+    2  ls
+    3  mv ds-ansible ..
+    4  ls
+    5  ..
+    6  ls
+    7  cd ds-ansible
+    8  ls
+    9  cd centos7
+   10  cd 01_centos_mirror
+   11  vi Vagrantfile
+   12  tmux new-session -s distribuidos
+   13* ip add
+   14* vi Vagrantfile
+   15* ls
+   16* vi Vagrantfile
+   17* cd group_vars
+   18* vi all.yml
+   19* ..
+   20* cd playbooks
+   21* ls
+   22* vi client.yml
+   23* vagrant up
+   24  ls
+   25  vi Vagrantfile
+   26* vagrant status
+   27* vagrant ssh mirror
+   28* ..
+   29* ansible-playbook -i hosts playbooks/mirror.yml
+   30* cd group_vars
+   31* vi all.yml
+   32* ..
+   33* cd playbooks
+   34* ls
+   35* vi client.yml
+   36* vi mirror.yml
+   37* ..
+   38* vagrant ssh mirror
+   39* vi client.yml
+   40* ls
+   41* cd playbooks
+   42* vi client.yml
+   43* ansible-playbook -i hosts playbooks/mirror.yml
+   44* vi mirror.yml
+   45* ..
+   46* ansible-playbook -i hosts playbooks/mirror.yml
+   47* ls
+   48* vagrant ssh mirror
+   49* vagrant ssh client
+   50* vi client.yml
+   51* vi /playbooks/client.yml
+   52* ls
+   53* cd playbooks
+   54* vi client.yml
+   55* vagrant destroy -f
+   56* vagrant up
+   57* ..
+   58* ansible-playbook -i hosts playbooks/mirror.yml
+   59  ls
+   60  cd group_vars
+   61  vi all.yml
+   62  ..
+   63  vi playbooks/mirror.yml
+   64  vi playbooks/client.yml
+   65  ansible-playbook -i hosts playbooks/mirror.yml
+   66  ansible-playbook -i hosts playbooks/client.yml
+   67  vagrant ssh client
+   68* ls
+   69* cd playbooks
+   70* vi client.yml
+   71* exit
+   72  ls
+   73  ..
+   74  cd ds-ansible
+   75  git init
+   76  git status
+   77  git add .
+   78  git commit -m "First commit"
+   79  git remote add origin https://github.com/JuanesApps/ds-ansible.git
+   80  git remote -d
+   81  git remote remove
+   82  git remote remove origin
+   83  git remote add origin https://github.com/JuanesApps/ds-ansible.git
+   84  git push -u origin master
