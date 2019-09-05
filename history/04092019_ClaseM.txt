@@ -1,0 +1,78 @@
+    1  cd Documentos/Distribuidos/ds-ansible
+    2  tmux new-session -s distribuidos
+    3  ls
+    4  cd centos7
+    5  ls
+    6  01_centos_mirror
+    7  ls
+    8  cd playbooks
+    9  ls
+   10  vi mirror.yml
+   11  cat mirror.yml
+   12  vi mirror.yml
+   13  ls -l
+   14  ls -a
+   15  rm .mirror.yml.swp
+   16  vi mirror.yml
+   17  ls -al
+   18  rm .mirror.yml.swn
+   19  rm .mirror.yml.swo
+   20  ls -la
+   21  ..
+   22  ls -l
+   23  vi ansible.cfg
+   24  vi ./group_vars/all.yml 
+   25  vi ./playbooks/mirror.yml
+   26  vi ./playbooks/client.yml
+   27  vagrant up
+   28  vagrant destroy -f
+   29  tree
+   30  vi ./group_vars/all.yml 
+   31  vagrant up client
+   32  vagrant ssh client
+   33  ansible-playbook -i ./playbooks/client.yml
+   34  ansible-playbook -i hosts
+   35  ansible-playbook -i ./playbooks/client.yml
+   36  ansible-playbook -i hosts
+   37  ansible-playbook -i hosts ./playbooks/client.yml
+   38  vagrant ssh client
+   39  ansible-playbook -i hosts ./playbooks/mirror.yml
+   40  vagrant ssh client
+   41  ansible-playbook -i hosts ./playbooks/client.yml
+   42  vagrant ssh client
+   43  vi ./playbooks/client.yml
+   44  ls
+   45  vi hosts
+   46  vi ./group_vars/all.yml 
+   47  vi ./playbooks/client.yml
+   48  ansible-playbook -i hosts ./playbooks/client.yml
+   49  vagrant ssh client
+   50  vi ./group_vars/all.yml 
+   51  vi ./playbooks/client.yml
+   52  vi ./group_vars/all.yml 
+   53  vi ./playbooks/client.yml
+   54  ansible-playbook -i hosts ./playbooks/client.yml
+   55  vagrant status
+   56  vagrant destroy -f client
+   57  vagrant up client
+   58  ansible-playbook -i hosts ./playbooks/client.yml
+   59  vi ./playbooks/client.yml
+   60  vi ./group_vars/all.yml 
+   61  ansible-playbook -i hosts ./playbooks/client.yml
+   62  vi ./group_vars/all.yml 
+   63  vi ./playbooks/client.yml
+   64  vagrant destroy -f client
+   65  vagrant up client
+   66  ansible-playbook -i hosts ./playbooks/client.yml
+   67  tree
+   68  ..
+   69  tree
+   70  ..
+   71  ls
+   72  echo "https://github.com/ICESI/so-microservices-python-part2.git" > repoAclonar.txt
+   73  ls
+   74  mkdir history
+   75  mv 02092019_ClaseL.txt ./history
+   76  ls
+   77  ls history
+   78  cd history

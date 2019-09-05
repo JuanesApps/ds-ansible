@@ -1,6 +1,9 @@
 packages:
-  - nmap
-  # - python36
-  # - python36-pip
-  - postgresql
-  - nodejs
+    #- nmap
+    # Lo dejo comentado para evidenciar que el mirror de otro compañero me brinda esos paquetes
+    #- python36
+    #- python36-pip
+    #- postgresql
+    #- git
+    #- nodejs
+ip_mirror: 192.168.131.121 icesi.mirror.edu.co

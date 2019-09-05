@@ -8,7 +8,7 @@
     - name: Insert entry to hosts file for testing
       lineinfile:
         path: /etc/hosts
-        line: 192.168.131.71 icesi.mirror.edu.co
+        line: "{{ip_mirror}}"
     - name: Copy icesi repo configuration
       copy: 
         src: ../templates/repo/icesi.repo
@@ -33,8 +33,11 @@
     - name: Install packages with multiple repos disabled
       yum:
         name: 
-          - nmap
-          - postgresql
-          - nodejs
+            #- nmap
+          - python36
+          - python36-pip
+          - git
+            #- postgresql
+            #- nodejs
         enablerepo: 'icesirepo'
         disablerepo: '*'
